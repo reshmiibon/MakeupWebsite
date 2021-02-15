@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- image in title bar -->
+<link rel="icon" href="images/remalogo.png" type="image/png">
+
+<link rel="stylesheet" href="ContactInfoCSS.css">
+	<!-- for title font -->
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+<!-- linking bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<!-- java script to get alert after clicking submit button-->
+<script>
+ function disp(){
+ alert("Thank you. Your form has been submitted") 
+ } 
+</script>
+</head>
+
+<body>
+	<!-- title -->
+<body style="background-color: pink">
+<div id="title" class="jumbotron text-center">
+<h1 style="font-size:50px">Contact Info</h1>
+</div>
+
+	
+<!--top right corner contact info details-->
+<div id="contact_details"> 
+  Phone Number: 416-471-7141 <br>
+  Email: ramagirishb@gmail.com 
+</div> 
+
+  <!-- navigation bar -->
+<nav id="navigation" class="navbar navbar-expand-sm navbar-light" >
+  <a class="navbar-brand" href="#">
+      <img id="logo" src="images/remalogo.png" alt="Rema-Logo">
+  </a>
+  <ul id="nav-items" class="navbar-nav justify-content-center">
+      <li id="nav-list"class="nav-item active">
+          <a class="nav-link" href="makeup_website.html">Home</a>
+      </li>
+      <li id="nav-list" class="nav-item">
+          <a class="nav-link" href="mehndi.html">Mehndi</a>
+      </li>
+      <li id="nav-list" class="nav-item">
+          <a class="nav-link" href="price.html">Packages & Prices</a>
+      </li>
+      <li id="nav-list" class="nav-item">
+          <a class="nav-link" href="ContactInfo.html">Contact Info</a>
+      </li>
+  </ul>
+</nav>
+
+<!-- form using bootstrap -->
+<div id="outter-box">
+<form >
+
+  <div id="firstn" class="form-group">
+    <label for="fname"><h4>First Name:</h4></label>
+    <textarea class="form-control" id="fname" rows="1" ></textarea>
+  </div>
+
+<div class="form-group">
+    <label for="lname"><h4>Last Name:</h4></label>
+    <textarea class="form-control" id="lname" rows="1" ></textarea>
+  </div>
+
+  <div id="email" class="form-group">
+    <label for="exampleFormControlInput1"><h4>Email Address:</h4></label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  
+
+<h4>Interests:</h4>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Makeup
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Hair
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Mehndi
+  </label>
+</div>
+
+  <div id="comments">
+    <label for="exampleFormControlTextarea1"><h4>Comment:</h4></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Type Here"></textarea>
+  </div>
+
+
+  <input id="submit-btn" type="submit" value="Submit" class="btn btn-secondary" onclick="disp()">
+</form>
+</div>
+</body>
+</html>
+</body>
+</html>
