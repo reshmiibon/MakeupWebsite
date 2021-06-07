@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/bluebg.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width:100%;
+    height:15vh;
+    margin:auto;
+    display:flex;
+    align-items:center;
+}
+.logo{
+    width:400px;
+}
+nav{
+    flex:1;
+    padding-left:500px;
+    justify-content:space-between;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0px 20px;
+    color:white;
+    font-size: larger;
+}
+nav ul li:hover{
+   border-top: 3px solid #ffdcba;
+   padding-top: 8px;
+   
+}
+nav ul li a{
+    text-decoration: none;
+    color:white; 
+}
+
+.submenu{
+    display:none;
+    position: absolute;
+    background-color: #f5cba0;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px 12px;
+    z-index: 1;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+  }
+.dropdown:hover .submenu li {
+    display: block;
+    text-align: left;
+    padding-top: 10px;
+    font-size: smaller;  }
+
+.form-group, .form-check{
+	margin-right: 70%;
+	padding-bottom:10px;
+}
+
+.form-check{
+    display: inline-flex;
+    text-indent: 10px;
+    padding-top: 3px;
+}
+form{
+	padding-left:40px;
+    padding-top:30px;
+    padding-right:100px;
+    margin: 20px 0px 10px 0px; /* top right bottom left */
+}
+label{
+    display: inline-flex;
+    font-size: larger;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#comments{
+	margin-right:40%;
+	padding-bottom:10px;
+}
+
+#outter-box{
+	background-color: white;
+    height:80%;
+    width:50%;
+    border-style: double;
+    border-color: #e2b88e;
+
+}
+
+#exampleFormControlTextarea1, #fname, #lname,#exampleFormControlInput1{
+	border-style:none;
+	border-width: 1px; 
+    border-bottom: solid 1px;
+    border-color: #e2b88e;
+
+}
+
+#submit-btn{
+    display: inline-block;
+    background:linear-gradient(45deg,#87adfe,#ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing:border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+	margin-bottom:10px;
+    border-style: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+#heading{
+    font-size: 60px ;
+    font-weight: 100 ;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    margin-left:4.5%;
+    color: #ffdcba ;
+    position:absolute;
+    left:800px;
+}
+#details{
+    font-size: 20px ;
+    margin-left:9%;
+    color: rgb(228, 210, 228);
+    position:absolute;
+    left:1100px;
+    top:300px;
+}
+#details2 {
+    font-size: 20px ;
+    margin-left:9%;
+    color: rgb(228, 210, 228);
+    position:absolute;
+    left:1100px;
+    top:270px;
+}
+.photo{
+    position:absolute;
+    left:800px;
+    top:300px;
+}

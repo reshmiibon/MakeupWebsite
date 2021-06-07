@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="contact.css">
+    <script>
+        function disp(){
+        alert("Thank you. Your form has been submitted"); 
+        } 
+    </script>
+</head>
+
+<body>
+    <div class="container">
+      <div class="navbar">
+        <img src="images/logo.png" class="logo">
+        <nav>
+            <ul>
+                <li><a href="makeup_home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li  class="dropdown"> <a href="services.html">Services</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="services.html#hennaservice">Henna</a></li>
+                            <li><a href="services.html#hairservice">Hair</a></li>
+                            <li><a href="services.html#makeupservice">Makeup</a></li>
+                        </ul>
+                    </div>
+                <li>
+                <li style="margin:0; padding:0;"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+        
+        <h1 id="heading">Feel free to contact Rema directly</h1>
+        <p id="details">(416) 471 7141</p>
+        <a id="details2" href = "mailto:remabeauty@google.com?subject = Inquiry&body = Message">
+        Email Rema
+        </a>       
+         <img src="images/contact_model.png" class="photo">
+
+        <div id="outter-box">
+            <form >
+            
+              <div id="firstn" class="form-group">
+                <label for="fname"><h4>First Name:</h4></label>
+                <textarea class="form-control" id="fname" rows="1" ></textarea>
+              </div>
+            <br>
+            <div class="form-group">
+                <label for="lname"><h4>Last Name:</h4></label>
+                <textarea class="form-control" id="lname" rows="1" ></textarea>
+              </div>
+            <br>
+
+              <div id="email" class="form-group">
+                <label for="exampleFormControlInput1"><h4>Email Address:</h4></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <br>
+
+            
+            <label><h4>Interests:</h4></label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Makeup
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Hair
+              </label>
+            </div>
+            
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Mehndi
+              </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Book a Free Trial
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                Book an Appointment
+                </label>
+              </div>
+
+            <br>
+            <br>
+
+              <div id="comments">
+                <label for="exampleFormControlTextarea1"><h4>Comments/Questions:</h4></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Type Here"></textarea>
+              </div>
+            
+              <br>
+
+              <input id="submit-btn" type="submit" value="Submit" class="btn btn-secondary" onclick="disp()">
+            </form>
+            </div>
+    </div>
+</body>
+</html>

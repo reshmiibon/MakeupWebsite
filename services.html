@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="services.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="makeup_home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li  class="dropdown"> <a href="services.html">Services</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#hennaservice">Henna</a></li>
+                                <li><a href="#hairservice">Hair</a></li>
+                                <li><a href="#makeupservice">Makeup</a></li>
+                            </ul>
+                        </div>
+                    <li>
+                    <li style="margin:0; padding:0;"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+        <br>
+      
+
+
+        <div class="row">
+            <div id="hennaservice" class="col">
+                <div class="text-box">
+                    <h5 ">Henna Services</h5>
+                    <h1>Have your hands filled with beautiful <b><i>henna</i> art</b></h1>
+                    <br>
+                    <p>The Henna used is specially selected from the best Henna plants grown in India and the Henna paste is especially handmade fresh to get the perfect blend of color. It has <b>no</b> chemicals or dye added and is completely safe for children too.</p>
+                    <br>
+                    <p>Prices for henna designs range based on complexity of the design. Prices can range from anywhere between $10 to $50. For more details visit the contact page to get in touch.</p>
+                </div>
+
+            </div>
+            <div class="col">
+               <div class="gallery-box">
+                   <img src="images/henna.jpg" id="henna">
+                   <ul>
+                       <li class="btn active">01 Simple</li>
+                       <li class="btn">02 Moderate</li>
+                       <li class="btn">03 Intricate</li>
+                   </ul>
+               </div>
+            </div>
+
+
+        </div>
+
+       
+    </div>
+
+<div id=hairservice class="container2">
+    <div class="row">
+        <div class="col">
+            <div class="text-box">
+                <h5>Hair Services</h5>
+                <h1>Gorgeous <b><i>hairstyles</i></b> to choose from for any <b>occassion</b></h1>
+                <br>
+                <p>Specific hair styles can be requested in advance or a hair look to compliment your makeup and/or the occassion can be decided upon by the makeup artist if you choose.</p>
+                <br>
+                <p>Prices depend on the hair and if styling will be needed such as curls and accessories. Feel free to head to the contact page for more questions and to get in touch.</p>
+            </div>
+
+        </div>
+        <div class="col">
+           <div class="gallery-box">
+               <img src="images/simple.jpeg" id="hair">
+               <ul>
+                   <li class="btn1">01 Simple</li>
+                   <li class="btn1">02 Evening</li>
+                   <li class="btn1 active">03 Party </li>
+                   <li class="btn1">04 Party</li>
+                   <li class="btn1">05 Bridal</li>
+                   <li class="btn1">06 Bridal </li>
+
+               </ul>
+           </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="makeupservice" class="container3">
+    <div class="row">
+        <div class="text-box">
+            <h5 style="padding-bottom: 10px;">Makeup Services</h5>
+            <h1>Stunning <b>makeup looks</b> for a night out or your big day</h1>
+            <br>
+            <p>Excellent quality makeup is used to suit everyone with a variety of makeup shades to choose from. Questions regarding pricing can be discussed on the phone or by appointment. </p>
+            <p>Head to the contact page to get in touch.</p>
+        </div>
+    </div>
+    <div class="photorow">
+        <img src="images/makeup1.jpeg" >
+        <img src="images/makeup2.jpeg" >
+        <img src="images/makeup3.jpeg" >
+        <img src="images/makeup4.jpeg" >
+
+    </div>
+</div>
+
+<script> /*java script to switch through pictures in photo gallery*/
+    var btn = document.getElementsByClassName("btn");
+    var henna= document.getElementById("henna");
+
+    var btn1 = document.getElementsByClassName("btn1");
+    var hair= document.getElementById("hair");
+
+    //store array of images
+    var images= new Array(
+        "images/henna.jpg",
+        "images/Henna3.jpg",
+        "images/bridalhenna.jpg");
+    
+        for (let i = 0; i < btn.length; i++) {
+            btn[i].onclick = function() {
+                henna.src = images[i];
+                let current = document.getElementsByClassName("active"); //finds element that is active 
+                current[0].className = current[0].className.replace("active", ""); //makes the current active li unactive 
+                this.className += " active"; // makes new li active by adding active class name -note space is important since its being added on to the class name
+    };
+}
+
+    var images1= new Array(
+        "images/simple.jpeg",
+        "images/evening.jpeg",
+        "images/party1.jpeg",
+        "images/party_hair.jpeg",
+        "images/bridal_hair.jpeg",
+        "images/bridal_long.jpeg",
+        );
+    
+        for (let i = 0; i < btn1.length; i++) {
+            btn1[i].onclick = function() {
+                hair.src = images1[i];
+                let current1 = document.getElementsByClassName("btn1 active"); //finds element that is active by class name
+                current1[0].className = current1[0].className.replace("active", ""); //makes the current active li unactive 
+                this.className += " active"; // makes new li active by adding active class name -note space is important since its being added on to the class name
+    };
+}
+</script>
+
+</body>
+</html>
